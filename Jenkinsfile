@@ -10,7 +10,7 @@ pipeline {
         sh 'date'
         echo 'building...'
         git branch: "${params.BRANCH}", url: 'https://github.com/patilmahadev/kube-exercise.git'
-        echo 'build successful''
+        echo 'build successful'
       }
     }
     stage('test') {
